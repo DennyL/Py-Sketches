@@ -30,7 +30,7 @@ def clockAngle(time: str) -> int:
 
     delta = 30 / 360
     angle_minute = minute * 6
-    angle_hour = (hour * 30) + (delta * minute)
+    angle_hour = (hour * 30) + (delta * angle_minute)
 
     return abs(angle_minute - angle_hour)
     
