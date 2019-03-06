@@ -9,7 +9,7 @@ def flatlist(array):
     result = [] 
     for i in array:
         if isinstance(i, list):
-            result += flat_list(i) 
+            result += flatlist(i) 
         else:
             result.append(i)
                
