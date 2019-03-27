@@ -13,17 +13,17 @@ def verification(username):
 
     for i in username:
         if i.isdigit():
-            digit = digit or True
+            digit |= True
         elif i == "-":
-            hyphen = hyphen or True
+            hyphen |= True
         else:
             # checking whether it is latin
             if not 63 < ord(i.lower()) < 123:
                 return False 
             elif i.islower():
-                lower = lower or True
+                lower |= True
             elif i.isupper():
-                upper = upper or True
+                upper |= True
             
         
     return lower and upper and digit and hyphen
