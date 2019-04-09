@@ -1,6 +1,7 @@
-################
-# from checkio #
-################
+#################
+# from  checkio #
+#  my solution  #
+#################
 
 """
 Find the nearest value to the given one.
