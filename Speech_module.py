@@ -1,6 +1,7 @@
-################
-# from checkio #
-################
+#################
+# from  checkio #
+#  my solution  #
+#################
 
 """
 Stephen's speech module is broken.
