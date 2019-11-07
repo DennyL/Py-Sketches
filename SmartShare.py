@@ -8,7 +8,7 @@ def interface():
     total_control = 0
     buddies_shares = []
     buddies = str(input("Enter names of buddies name1, name2, so on: "))
-    buddies = [x.strip().title() for x in buddies.split(',')]
+    buddies = [x.strip().title() for x in buddies.split(',') if x.isspace() is False and x!=""]
     total = float(input("What is the total sum? "))
     if total <= 0:
         print("\nTotal cannot be negative!\n")
