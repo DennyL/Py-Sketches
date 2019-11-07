@@ -9,6 +9,9 @@ def interface():
     buddies_shares = []
     buddies = str(input("Enter names of buddies name1, name2, so on: "))
     buddies = [x.strip().title() for x in buddies.split(',') if x.isspace() is False and x!=""]
+    if len(buddies) < 2:
+        print("\nThere's no one to count\n")
+        return
     total = float(input("What is the total sum? "))
     if total <= 0:
         print("\nTotal cannot be negative!\n")
@@ -145,4 +148,3 @@ if __name__ == "__main__":
 ##    print(test_6())
 ##    print(test_7())
 ##    print(test_8())
-
